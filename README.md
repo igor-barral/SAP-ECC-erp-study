@@ -1,7 +1,7 @@
 # SAP ECC - Study
 
 > Nível: prática
-> O ERP que a maior parte dos clientes SAP no Brasil ainda roda e que motiva a onda de migração para o S/4HANA. Relacionados: [SAP S/4HANA](../SAP-S4HANA-erp-study/), [Business Partner](../SAP-Business-Partner-erp-study/), [Estrutura organizacional](../SAP-Enterprise-Structure-erp-study/), [Migração para S/4HANA](../SAP-S4HANA-Migration-erp-study/), [RISE with SAP](../RISE-with-SAP-erp-study/).
+> O ERP que a maior parte dos clientes SAP no Brasil ainda roda e que motiva a onda de migração para o S/4HANA. Relacionados: [SAP S/4HANA](https://github.com/igor-barral/SAP-S4HANA-erp-study), [Business Partner](https://github.com/igor-barral/SAP-Business-Partner-erp-study), [Estrutura organizacional](https://github.com/igor-barral/SAP-Enterprise-Structure-erp-study), [Migração para S/4HANA](https://github.com/igor-barral/SAP-S4HANA-Migration-erp-study), [RISE with SAP](https://github.com/igor-barral/RISE-with-SAP-erp-study).
 
 ## Objetivo
 
@@ -76,7 +76,7 @@ Consequências práticas:
 
 A SAP também anunciou uma opção de transição para clientes que migrarem para a nuvem privada dentro do RISE, com prazo mais longo para o ECC operado pela SAP. Os detalhes comerciais e prazos exatos dessa opção devem ser confirmados na documentação oficial e no contrato do cliente.
 
-A regra de mercado é simples: todo cliente ECC precisa decidir até 2027 (ou 2030) se converte para S/4HANA, reimplanta do zero ou paga para ficar. Cada uma dessas decisões gera projeto, e projeto gera vaga de ABAP. Os caminhos de migração estão em [SAP-S4HANA-Migration-erp-study](../SAP-S4HANA-Migration-erp-study/).
+A regra de mercado é simples: todo cliente ECC precisa decidir até 2027 (ou 2030) se converte para S/4HANA, reimplanta do zero ou paga para ficar. Cada uma dessas decisões gera projeto, e projeto gera vaga de ABAP. Os caminhos de migração estão em [SAP-S4HANA-Migration-erp-study](https://github.com/igor-barral/SAP-S4HANA-Migration-erp-study).
 
 ### 4. Por que tanta empresa ainda roda ECC
 
@@ -99,7 +99,7 @@ Esta é a parte que mais importa para o desenvolvedor: são as tabelas que apare
 | Dados por área de vendas / organização de compras | `KNVV` | `LFM1` |
 | Transações de manutenção | XD01/XD02/XD03 (central), VD01 (vendas), FD01 (contabilidade) | XK01/XK02/XK03 (central), MK01 (compras), FK01 (contabilidade) |
 
-Uma mesma empresa que compra e vende para você existe duas vezes, com endereço e CNPJ duplicados. No S/4HANA isso é resolvido pelo [Business Partner](../SAP-Business-Partner-erp-study/).
+Uma mesma empresa que compra e vende para você existe duas vezes, com endereço e CNPJ duplicados. No S/4HANA isso é resolvido pelo [Business Partner](https://github.com/igor-barral/SAP-Business-Partner-erp-study).
 
 #### Documento de material (estoque)
 
@@ -138,7 +138,7 @@ flowchart LR
     BSIK -. "item sai daqui" .-> BSAK
 ```
 
-No S/4HANA, contabilidade financeira e controladoria gravam numa única tabela, o **Universal Journal** (`ACDOCA`). `BSIK`, `BSAK`, `GLT0` e as demais passaram a ser views de compatibilidade calculadas sobre ela. Detalhes em [SAP-S4HANA-erp-study](../SAP-S4HANA-erp-study/) e [SAP-FI-erp-study](../SAP-FI-erp-study/).
+No S/4HANA, contabilidade financeira e controladoria gravam numa única tabela, o **Universal Journal** (`ACDOCA`). `BSIK`, `BSAK`, `GLT0` e as demais passaram a ser views de compatibilidade calculadas sobre ela. Detalhes em [SAP-S4HANA-erp-study](https://github.com/igor-barral/SAP-S4HANA-erp-study) e [SAP-FI-erp-study](https://github.com/igor-barral/SAP-FI-erp-study).
 
 #### Vendas
 
